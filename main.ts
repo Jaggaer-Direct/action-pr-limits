@@ -56,8 +56,8 @@ function handlePullRequest(allowedBranches: string[], forbiddenBranches: string[
     //const foundAllowed = allowedBranches.find(branch => branch === headRef);
     
     //Allow regex pattern
-    const foundForbidden = validateName(branch, forbiddenBranches);
-    const foundAllowed = validateName(branch, allowedBranches);
+    const foundForbidden = validateName(headRef, forbiddenBranches);
+    const foundAllowed = validateName(headRef, allowedBranches);
 
     if (allowedBranches.length > 0) {
         if (foundAllowed) {
