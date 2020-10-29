@@ -22,6 +22,8 @@ function main(): void {
         return;
     }
 
+    core.info("Checking branches");
+
     const allowedBranches = getInputs('whitelist');
     const forbiddenBranches = getInputs('blacklist');
     handlePullRequest(allowedBranches, forbiddenBranches);
