@@ -1,9 +1,12 @@
 {
   "name": "action-pr-limits",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/index.js",
-  "repository": "git@github.com:LukBukkit/action-pr-limits.git",
-  "author": "LukBukkit <luk.bukkit@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jaggaer-cherndler/action-pr-limits.git"
+  },
+  "author": "Christoph Herndler <cherndler@jaggaer.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -18,5 +21,14 @@
   "devDependencies": {
     "@zeit/ncc": "^0.21.1",
     "typescript": "^3.8.3"
-  }
+  },
+  "description": "A GitHub action which limits pull requests to given branches.",
+  "bugs": {
+    "url": "https://github.com/jaggaer-cherndler/action-pr-limits/issues"
+  },
+  "homepage": "https://github.com/jaggaer-cherndler/action-pr-limits#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": []
 }
